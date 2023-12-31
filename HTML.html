@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/JS_Bitrix.JS">
+    <link rel="stylesheet" href="/Style_Bitrix.CSS">
+    <link rel="stylesheet" href="/swiper-bundle.min.css">
+    <link rel="stylesheet" href="/swiper-bundle.min.js">
+</head>
+<body>
+
+<!--Сам сайт-->
+<div class ="Doska">
+<div class="Well_blog">
+    <!--Шапка сайта-->
+<div class ="Item_Shapka" id="GL_Menu">
+
+    <!--Лого SUper Quiz--->
+    <div class ="Super_Quiz">
+        <ul class ="item_Super_Quiz">
+            <li class ="Super_Quiz_Image">
+                <a href ="Super_Quiz" class ="Super_Quiz_logo">
+                    <img src="/SVG/Super Quiz.svg" alt="Super_Quiz">
+                </a>
+            </li>        
+        </ul>
+    </div>
+
+     <!--Блок кнопок-->
+     <div class ="buttons">
+        <button class ="button_Glavnaya">Главная</button>
+        <button class ="button_Kviz">Квиз</button>
+        <button class ="button_Otzyvy">Отзывы</button>
+    </div>
+    
+    <!--Не главная-->
+    <div class="nav_Ne_Glavnaya">
+        <button class="Menu_Ne_Glavnaya">
+            Не главная
+        </button>
+        <div class="Variants">
+            <a href="#PodPunkt" class="var1">Подпункт</a>
+            <a href="#Ewe_Punkt" class="var2">Еще один пункт</a>
+            <a href="#I_ewe_Odin" class="var3">И еще один пункт</a>
+        </div>
+    </div>
+
+    <div class ="button_black">
+        <button class ="button_Call">Связаться с нами</button>
+    </div>
+
+    <!--Блок соц. сетей-->
+    <div class ="Nav_Image">
+        <ul class ="item_Images">
+            <li class ="item_TT">
+                <a href="Tik-Tok" class ="TT">
+                    <img src="/PNG/TT.png" alt="Tik-Tok">
+                </a>
+            </li>
+            <li class ="item_VK">
+                <a href="VK" class ="VK">
+                    <img src="/PNG/VK.png" alt="VK">
+                </a>
+            </li>
+            <li class ="item_TG">
+                <a href="TG" class ="TG">
+                    <img src="/PNG/TG.png" alt="TG">
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<!--Блок воспросов-->
+<div class ="Block_questions">
+    <!--Левый вопрос-->
+    <div class ="Left_Question">
+        <img src="/SVG/Left_question.svg"
+            alt="Left_question"
+            class ="Left_que">
+    </div>
+
+    <!--Это Супер Квиз-->
+    <div class ="Centr">
+        <i class ="item_Eto_Super_Quiz">
+            <img src="/SVG/Eto_Super_Quiz.svg"
+                alt="Eto_Super_Quiz"
+                class ="Logo_Eto_Super_Quiz">
+        </i>
+
+        <!--Пройти Супер Квиз-->
+        <div class ="item_centr_Font">
+            Пройди квиз, и будешь счастлив.
+            Этот квиз предназначен для тех людей,
+            которые любят проходить тесты!
+        </div>
+
+        <!--Кнопка Прости супер квиз-->
+        <ol>
+            <a href="#Blok1" class="Quiz">
+                Пройти супер квиз
+            </a>
+        </ol>
+
+    </div>
+
+    <!--Правый вопрос-->
+    <div class ="Right_Question">
+        <img src="/SVG/Right_Question.svg"
+             alt="Right_question"
+             class="Right_que">
+    </div>
+
+    <!--Пункт со смайликами-->
+    <div class ="button_Smiles">
+            <button class ="Smile1" id ="pressButtonS1" onclick="changeColor()"><i class ="S1">😋</i><i class ="fonts1">Восхитительно</i></button>
+            <button class ="Smile2" id ="pressButtonS2" onclick="changeColor()"><i class ="S2">😎</i><i class ="fonts2">Лучше не бывает</i></button>
+            <button class ="Smile3" id ="pressButtonS3" onclick="changeColor()"><i class ="S3">😍</i><i class ="fonts3">Где найти еще?</i></button>
+            <button class ="Smile4" id ="pressButtonS4" onclick="changeColor()"><i class ="S4">🤩</i><i class ="fonts4">В натуре четко!</i></button>
+            <button class ="Smile5" id ="pressButtonS5" onclick="changeColor()"><i class ="S5">😍</i><i class ="fonts5">Круто</i></button>  
+            <script src="/Figma_New/JS.JS"></script>
+    </div>
+
+    <!-----------ПЕРВАЯ СЕКЦИЯ ВОПРОСОВ--------------->
+    <section id="sec1">
+    <div class="Tests_Block_ans1" id="Blok1">
+        <div class ="Tests_Block">
+        <!--Какие виды тестов вам нравятся ?-->
+        <i><img class="Test_image" src="/PNG/TEST.png" alt="Какие виды тестов"></i>
+        
+        <!--Многие из нас хоть раз-->
+        <i class ="font_block">
+            Многие из нас хоть раз попадались
+            на эту удочку — хочешь пройти всего
+            один тест из интернета, и вдруг понимаешь,
+            что пролетело полдня.
+        </i>
+
+        <!--Блок Ответов 1-->
+        <div class ="Block_answers">
+            
+            <!--На темперамент-->
+           <input class="check1" type="checkbox" id="answer1" name="answer">
+           <label class="checkbox_btn1" for="answer1">
+                <i class ="font_answer1">
+                    На темперамент
+                </i>
+            </label>
+
+            <!--Кто я из вселенной Марвел-->
+            <input class="check2" type="checkbox" id="answer2" name="answer">
+            <label class="checkbox_btn2" for="answer2">
+                <i class ="font_answer2">
+                    Кто я из вселенной Марвел
+                </i>
+            </label>
+
+            <!--Увидел это-->
+            <input class="check3" type="checkbox" id="answer3" name="answer">
+            <label class="checkbox_btn3" for="answer3">
+                <i class ="font_answer3">
+                    Увидел это
+                </i>
+            </label>
+
+        </div>
+
+        <!--Блок Ответов 2-->
+        <div class ="Block_answers2">
+            
+            <!--Мое тотемное животное-->
+           <input class="check4" type="checkbox" id="answer4" name="answer">
+           <label class="checkbox_btn4" for="answer4">
+                <i class ="font_answer4">
+                    Мое тотемное животное
+                </i>
+            </label>
+
+            <!--На IQ-->
+            <input class="check5" type="checkbox" id="answer5" name="answer">
+            <label class="checkbox_btn5" for="answer5">
+                <i class ="font_answer5">
+                    На IQ
+                </i>
+            </label>
+
+            <!--На словарный запас-->
+            <input class="check6" type="checkbox" id="answer6" name="answer">
+            <label class="checkbox_btn6" for="answer6">
+                <i class ="font_answer6">
+                    На словарный запас
+                </i>
+            </label>
+            
+        </div>
+
+        <!--Блок Ответов 3-->
+        <div class ="Block_answers3">
+            
+            <!--На логическое мышление-->
+           <input class="check7" type="checkbox" id="answer7" name="answer">
+           <label class="checkbox_btn7" for="answer7">
+                <i class ="font_answer7">
+                    На логическое мышление
+                </i>
+            </label>
+
+            <!--На уровень интеллекта-->
+            <input class="check8" type="checkbox" id="answer8" name="answer">
+            <label class="checkbox_btn8" for="answer8">
+                <i class ="font_answer8">
+                    На уровень интеллекта
+                </i>
+            </label>
+        </div>
+        </div>
+        <!--------------------Кнопка ПРОДОЛЖИТЬ------------------>
+        <nav id="fix_menu" class="Proda1">
+            <a class="bl1" href="#Blok1">Ответы</a>
+            <a class="bl2" href="#Blok2">Ответы</a>
+            <a class="bl3" href="#Blok3">Ответы</a>
+        </nav>
+
+    </div>
+    </section>
+
+<!---------------ВТОРАЯ СЕКЦИЯ ВОПРОСОВ--------------->
+<section id="sec2">
+    <div class="Tests_Block_ans2" id="Blok2">
+        <div class ="Tests_Block2">
+            <!--Вы любите проходить тесты?-->
+            <i><img class="Test_image2" src="/PNG/TEST2.png" alt="Вы любите проходить тесты?"></i>
+        
+            <!--Нам важно узнать насолько часто Вы проходите тесты.-->
+            <i class ="font_block2">
+            Нам важно узнать насолько часто Вы проходите тесты.
+            </i>
+
+            <!--Блок Ответов 1-->
+            <div class ="Block_answers4">
+            
+                <!--Нет, я не никогда не прохожу тесты-->
+                <input class="check_nine" type="checkbox" id="answer_nine" name="answer">
+                <label class="checkbox_btn_nine" for="answer_nine">
+                    <i class ="font_answer_nine">
+                        Нет, я не никогда не прохожу тесты
+                    </i>
+                </label>
+
+                <!--Да, я прохожу все тесты-->
+                <input class="check_ten" type="checkbox" id="answer_ten" name="answer">
+                <label class="checkbox_btn_ten" for="answer_ten">
+                    <i class ="font_answer_ten">
+                        Да, я прохожу все тесты
+                    </i>
+                </label>
+
+            </div>
+
+            <!--Блок Ответов 2-->
+            <div class ="Block_answers5">
+            
+                <!--Заставляю себя проходить тесты-->
+                <input class="check12" type="checkbox" id="answer12" name="answer">
+                <label class="checkbox_btn12" for="answer12">
+                    <i class ="font_answer12">
+                        Заставляю себя проходить тесты
+                    </i>
+                </label>
+
+            </div>
+
+            <!--Блок Ответов 3-->
+            <div class ="Block_answers6">
+            
+                <!--Не люблю проходить тесты, но иногда приходится-->
+                <input class="check15" type="checkbox" id="answer15" name="answer">
+                <label class="checkbox_btn15" for="answer15">
+                    <i class ="font_answer15">
+                        Не люблю проходить тесты, но иногда приходится
+                    </i>
+                </label>        
+            
+            </div>
+        </div>
+
+        <!--------------------Кнопка ПРОДОЛЖИТЬ------------------>
+        <nav id="fix_menu2" class="Proda2">
+            <a class="bl4" href="#Blok1">Ответы</a>
+            <a class="bl5" href="#Blok2">Ответы</a>
+            <a class="bl6" href="#Blok3">Ответы</a>
+        </nav>
+
+    </div>
+</section>
+
+<!---------------ТРЕТЬЯ СЕКЦИЯ ВОПРОСОВ--------------->
+<section id="sec3">
+    <div class="Tests_Block_ans3" id="Blok3">
+        <div class ="Tests_Block3">
+            <!--Спасибо за ответы! Заполните форму ниже-->
+            <i><img class="Test_image_SM" src="/PNG/TEST3_SM.png" alt="Smile"></i>
+            <i><img class="Test_image3" src="/PNG/TEST3.png" alt="Вы любите проходить тесты?"></i>
+        
+            <!--Нам важно узнать насолько часто Вы проходите тесты.-->
+                <i class ="font_block3">
+                    Ваше мнение важно для нас. Прикрепите фото с
+                    Вашей любимой картинкой и оставьте комментарий
+                    насколько понравился Вам тест.
+                </i>
+            <!--Масто для комментария-->
+            <div class="comment_placce">
+                <input type="text" id="comm_field"
+                class="comments"
+                placeholder="Ваше мнение сюда">
+            </div>
+        
+            <!--МИНИ МЕНЮ - Вариаты ответов-->
+            <div class="nav_button">
+                <button class="Menu_btn">
+                    Эмоция😄
+                </button>
+                <div class="Emoutions">
+                    <a href="#Blok3" class="Em1">Очень понравился</a>
+                    <a href="#Blok3" class="Em1">Не понравился</a>
+                    <a href="#Blok3" class="Em1">Пройду еще раз</a>
+                    <a href="#Blok3" class="Em1">Посоветую пройти всем</a>
+                </div>
+            </div>
+        </div>
+
+        <!--------------------Кнопка ПРОДОЛЖИТЬ------------------>
+        <nav id="fix_menu3" class="Proda3">
+            <a class="bl7" href="#Blok1">Ответы</a>
+            <a class="bl8" href="#Blok2">Ответы</a>
+            <a class="bl_nine" href="#Blok3">Ответы</a>
+        </nav>
+        <!--------------Кнопка на ГЛАВНОЕ МЕНЮ------------------->
+        <nav class="Glav_Menu">
+            <a href="#GL_Menu" class="font_GL_Menu">
+                Главное меню
+            </a>
+        </nav>
+
+    </div>          
+</section>
+</div>
+
+<!--Отзывы-->
+<!-- Swiper -->
+<div class="swiper mySwiper">
+    <!--JS Стрелки-->
+    <div class="swiper-wrapper">
+        
+        <!--1-->
+        <div class="swiper-slide">
+            <!--Андрей Пархимович-->
+            <!--Задний фон-->
+            <div class="Fon_Pic1">
+                <!--Прозрачный фон-->
+                <div class="Blog_Andrew">
+                    <!--Белый фон-->
+                    <div class="mini_Blog">
+                        <!--Рамка-->
+                        <div class="Ramka">
+                            <!--Место для фото-->
+                            <div class="Photo1">
+                                <!--Фото-->
+                                <img src="/Photo/Andrew.png" alt="Andrew">
+                            </div>
+                        </div>
+                            <h1 class="FIO1">
+                                Андрей Пархимович
+                            </h1>
+                            <span class="Comment1">
+                            В целом, конечно, постоянное
+                            информационно-пропагандистское
+                            обеспечение нашей деятельности
+                            влечет за собой процесс внедрения
+                            и модернизации направлений
+                            прогрессивного развития.
+                            </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!--2-->
+        <div class="swiper-slide">
+            <!--Тимур Никитенко-->
+            <!--Задний фон-->
+            <div class="Fon_Pic2">
+                <!--Прозрачный фон-->
+                <div class="Blog_Timur">
+                    <!--Белый фон-->
+                    <div class="mini_Blog_Timur">
+                        <!--Рамка-->
+                        <div class="Ramka">
+                            <!--Место для фото-->
+                            <div class="Photo1">
+                                <!--Фото-->
+                                <img src="/Photo/Timur.png" alt="Timur">
+                            </div>
+                        </div>
+                            <h1 class="FIO2">
+                            Тимур Никитенко
+                            </h1>
+                            <span class="Comment2">
+                            Господа, глубокий уровень
+                            погружения в значительной
+                            степени обусловливает важность
+                            глубокомысленных рассуждений.
+                            </span>
+                    </div>
+                </div>
+            </div>    
+        </div>
+
+        <!--3-->
+        <div class="swiper-slide">
+            <!--Артур Усович-->
+            <!--Задний фон-->
+            <div class="Fon_Pic3">
+                <!--Прозрачный фон-->
+                <div class="Blog_Arthur">
+                    <!--Белый фон-->
+                    <div class="mini_Blog_Art">
+                        <!--Рамка-->
+                        <div class="Ramka">
+                            <!--Место для фото-->
+                            <div class="Photo3">
+                                <!--Фото-->
+                                <img src="/Photo/Arthur.png" alt="Arthur">
+                            </div>
+                        </div>
+                            <h1 class="FIO3">
+                            Артур Усович
+                            </h1>
+                            <span class="Comment3">
+                            Задача организации, в особенности
+                            же убеждённость некоторых оппонентов
+                            предопределяет высокую востребованность
+                            благоприятных перспектив.
+                            </span>
+                    </div>
+                </div>
+            </div>    
+        </div>
+
+        <!--4-->
+        <div class="swiper-slide">
+            <!--Егор Грей-->
+            <!--Задний фон-->
+            <div class="Fon_Pic4">
+                <!--Прозрачный фон-->
+                <div class="Blog_Egor">
+                    <!--Белый фон-->
+                    <div class="mini_Blog_Egor">
+                        <!--Рамка-->
+                        <div class="Ramka">
+                            <!--Место для фото-->
+                            <div class="Photo4">
+                                <!--Фото-->
+                                <img src="/Photo/Egor.png" alt="Egor">
+                            </div>
+                        </div>
+                            <h1 class="FIO4">
+                            Егор Грей
+                            </h1>
+                            <span class="Comment4">
+                            Разнообразный и богатый
+                            опыт говорит нам, что
+                            высокое качество позиционных
+                            исследований предопределяет
+                            высокую востребованность
+                            кластеризации усилий.
+                            </span>
+                    </div>
+                </div>
+            </div>    
+        </div>
+
+        <!--5-->
+        <div class="swiper-slide">
+            <!--Тимур Никитенко-->
+            <!--Задний фон-->
+            <div class="Fon_Pic5">
+                <!--Прозрачный фон-->
+                <div class="Blog_Tim">
+                    <!--Белый фон-->
+                    <div class="mini_Blog_Tim">
+                        <!--Рамка-->
+                        <div class="Ramka">
+                            <!--Место для фото-->
+                            <div class="Photo5">
+                                <!--Фото-->
+                                <img src="/Photo/Timur.png" alt="Egor">
+                            </div>
+                        </div>
+                            <h1 class="FIO5">
+                            Тимур Никитенко
+                            </h1>
+                            <span class="Comment5">
+                            Мне очень понравился тест.
+                            </span>
+                    </div>
+                </div>
+            </div>    
+        </div>
+<!--ПОВТОРЫ-->
+        <!--1-->
+        <div class="swiper-slide">
+            <!--Андрей Пархимович-->
+            <!--Задний фон-->
+            <div class="Fon_Pic1">
+                <!--Прозрачный фон-->
+                <div class="Blog_Andrew">
+                    <!--Белый фон-->
+                    <div class="mini_Blog">
+                        <!--Рамка-->
+                        <div class="Ramka">
+                            <!--Место для фото-->
+                            <div class="Photo1">
+                                <!--Фото-->
+                                <img src="/Photo/Andrew.png" alt="Andrew">
+                            </div>
+                        </div>
+                            <h1 class="FIO1">
+                                Андрей Пархимович
+                            </h1>
+                            <span class="Comment1">
+                            В целом, конечно, постоянное
+                            информационно-пропагандистское
+                            обеспечение нашей деятельности
+                            влечет за собой процесс внедрения
+                            и модернизации направлений
+                            прогрессивного развития.
+                            </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!--2-->
+        <div class="swiper-slide">
+            <!--Тимур Никитенко-->
+            <!--Задний фон-->
+            <div class="Fon_Pic2">
+                <!--Прозрачный фон-->
+                <div class="Blog_Timur">
+                    <!--Белый фон-->
+                    <div class="mini_Blog_Timur">
+                        <!--Рамка-->
+                        <div class="Ramka">
+                            <!--Место для фото-->
+                            <div class="Photo1">
+                                <!--Фото-->
+                                <img src="/Photo/Timur.png" alt="Timur">
+                            </div>
+                        </div>
+                            <h1 class="FIO2">
+                            Тимур Никитенко
+                            </h1>
+                            <span class="Comment2">
+                            Господа, глубокий уровень
+                            погружения в значительной
+                            степени обусловливает важность
+                            глубокомысленных рассуждений.
+                            </span>
+                    </div>
+                </div>
+            </div>    
+        </div>
+
+        <!--3-->
+        <div class="swiper-slide">
+            <!--Артур Усович-->
+            <!--Задний фон-->
+            <div class="Fon_Pic3">
+                <!--Прозрачный фон-->
+                <div class="Blog_Arthur">
+                    <!--Белый фон-->
+                    <div class="mini_Blog_Art">
+                        <!--Рамка-->
+                        <div class="Ramka">
+                            <!--Место для фото-->
+                            <div class="Photo3">
+                                <!--Фото-->
+                                <img src="/Photo/Arthur.png" alt="Arthur">
+                            </div>
+                        </div>
+                            <h1 class="FIO3">
+                            Артур Усович
+                            </h1>
+                            <span class="Comment3">
+                            Задача организации, в особенности
+                            же убеждённость некоторых оппонентов
+                            предопределяет высокую востребованность
+                            благоприятных перспектив.
+                            </span>
+                    </div>
+                </div>
+            </div>    
+        </div>
+
+        <!--4-->
+        <div class="swiper-slide">
+            <!--Егор Грей-->
+            <!--Задний фон-->
+            <div class="Fon_Pic4">
+                <!--Прозрачный фон-->
+                <div class="Blog_Egor">
+                    <!--Белый фон-->
+                    <div class="mini_Blog_Egor">
+                        <!--Рамка-->
+                        <div class="Ramka">
+                            <!--Место для фото-->
+                            <div class="Photo4">
+                                <!--Фото-->
+                                <img src="/Photo/Egor.png" alt="Egor">
+                            </div>
+                        </div>
+                            <h1 class="FIO4">
+                            Егор Грей
+                            </h1>
+                            <span class="Comment4">
+                            Разнообразный и богатый
+                            опыт говорит нам, что
+                            высокое качество позиционных
+                            исследований предопределяет
+                            высокую востребованность
+                            кластеризации усилий.
+                            </span>
+                    </div>
+                </div>
+            </div>    
+        </div>
+
+        <!--5-->
+        <div class="swiper-slide">
+            <!--Тимур Никитенко-->
+            <!--Задний фон-->
+            <div class="Fon_Pic5">
+                <!--Прозрачный фон-->
+                <div class="Blog_Tim">
+                    <!--Белый фон-->
+                    <div class="mini_Blog_Tim">
+                        <!--Рамка-->
+                        <div class="Ramka">
+                            <!--Место для фото-->
+                            <div class="Photo5">
+                                <!--Фото-->
+                                <img src="/Photo/Timur.png" alt="Egor">
+                            </div>
+                        </div>
+                            <h1 class="FIO5">
+                            Тимур Никитенко
+                            </h1>
+                            <span class="Comment5">
+                            Мне очень понравился тест.
+                            </span>
+                    </div>
+                </div>
+            </div>    
+        </div>
+
+    </div>
+        <!--Стрелки-->
+        <!--Право-->
+        <div class="swiper-button-next"
+            style= "width: 100px;
+                    height: 100px;
+                    padding-left: 35px;
+                    padding-top: 10px;
+                    border-radius: 32px;
+                    display: block;
+                    position: absolute;
+                    margin-left: 10px;
+                    background-image: url(/SVG/Right.svg);">
+        </div>
+        <!--Лево-->
+        <div class="swiper-button-prev"
+             style="width: 100px;
+                    height: 100px;
+                    padding-left: 35px;
+                    padding-top: 10px;
+                    border-radius: 32px;
+                    display: block;
+                    position: absolute;
+                    background-image: url(/SVG/Left.svg);">
+        </div>
+        <div class="swiper-pagination"></div>
+</div>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      loop: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+
+    <!--Черный пол с телефоном и Email адресом-->
+    <div class="Black_Blog">
+    
+        <!--Телефон-->
+        <h2 class="font_number">Телефон</h2>
+        
+        <!--Email-->
+        <h2 class="font_Email">Email</h2>
+    
+        <!--+375 12 345 67 89-->
+        <a class="number_phone" href="">+375 12 345 67 89</a>
+        
+        <!--Gmail-->
+        <a class="Gmail" href="" >ourmail@gmail.com</a>
+
+        <!--ссылки на соц сети-->
+        <li class="Net_TT_VK_TG">
+            <!--TT-->
+            <a class="TT_Back_ground" href="" alt="TT">
+                <img src="/PNG/TikTok.png" alt="">
+            </a>
+            <!--VK-->
+            <a class="VK_Back_ground" href="" alt="VK">
+                <img src="/PNG/VKontakte.png" alt="">
+            </a>
+            <!--TG-->
+            <a class="TG_Back_ground" href="" alt="TG">
+                <img src="/PNG/Telegram.png" alt="">
+            </a>
+        </li>
+
+        <!--Super Quiz-->
+        <a class="SQ_Link" href="SQ_Link">Super Quiz</a>
+        
+    </div>
+   </div>
+  </div>
+</body>
+</html>

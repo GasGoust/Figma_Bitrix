@@ -1,0 +1,2210 @@
+/*FONTS*/
+
+/*============================================*/
+@font-face {
+    font-family: 'Neue Machina';
+    src: local('Neue Machina Bold'), local('Neue-Machina-Bold'),
+        url('//fonts/NeueMachina-Bold/NeueMachina-Bold.woff2') format('woff2'),
+        url('/fonts/NeueMachina-Bold/NeueMachina-Bold.woff') format('woff'),
+        url('/fonts/NeueMachina-Bold/NeueMachina-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Neue Machina';
+    src: local('Neue Machina Ultra bold'), local('Neue-Machina-Ultra-bold'),
+        url('/fonts/NeueMachina-Ultrabold/NeueMachina-Ultrabold.woff2') format('woff2'),
+        url('/fonts/NeueMachina-Ultrabold/NeueMachina-Ultrabold.woff') format('woff'),
+        url('/fonts/NeueMachina-Ultrabold/NeueMachina-Ultrabold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+  }
+
+/* raleway-100 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 100;
+  src: url('/fonts/Raleway/raleway-v29-latin-100.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* raleway-200 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 200;
+  src: url('/fonts/Raleway/raleway-v29-latin-200.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* raleway-300 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 300;
+  src: url('/fonts/Raleway/raleway-v29-latin-300.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* raleway-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/fonts/Raleway/raleway-v29-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* raleway-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 500;
+  src: url('/fonts/Raleway/raleway-v29-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* raleway-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 600;
+  src: url('/fonts/Raleway/raleway-v29-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* raleway-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  src: url('/fonts/Raleway/raleway-v29-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* raleway-800 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 800;
+  src: url('/fonts/Raleway/raleway-v29-latin-800.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* raleway-900 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 900;
+  src: url('/fonts/Raleway/raleway-v29-latin-900.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/*Сделать плавынй скролл от места к месту*/
+html{
+    scroll-behavior: smooth;
+}
+
+/*Доска - Сам Сайт*/
+.Doska{
+    width: 100%;
+    height: 2500px;
+    background-color: #F0D9FF;
+    border-radius: 32px;
+    position: absolute;
+}
+
+.Well_blog{
+width: 100%;
+height: 562px;
+display: block;
+position: absolute;
+background-color: #FFFFFF;
+border-radius: 32px;
+}
+
+.Item_Shapka{
+    background-color: #F2F2F2;; /*Удалить*/
+    width: 100%;
+    height: 64px;
+    margin-top: 0px;
+    position: absolute;
+    display: flex;
+    border-radius: 32px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    }
+
+/*SVG*/
+.Super_Quiz{
+   background-color: #F2F2F2;;/*Удалить*/
+   position: absolute;
+   margin-top: 15px;
+   margin-left: 45px;
+   width: 209px;
+   height: 35px;
+}
+.item_Super_Quiz{
+    margin-top: 0px;
+    padding-left: 0px;
+}
+.Super_Quiz_Image{
+    display: block;
+}
+
+/*Buttons*/
+.buttons{
+width: 480px; /*было - 400px*/
+height: 23px;
+background-color: #F2F2F2;
+position: absolute;
+margin-left: 417px;
+margin-top: 15px;
+}
+
+/*Кнопка Главная*/
+.button_Glavnaya{
+color: #000;
+font-family: Raleway;
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+/**/
+margin-right: 32px;
+border-radius: 10px;
+}
+
+/*Кнопка Квиз*/
+.button_Kviz{
+    color: #000;
+font-family: Raleway;
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+/**/
+margin-right: 32px;
+border-radius: 10px;
+}
+
+/*Кнопка Отзывы*/
+.button_Otzyvy{
+    color: #000;
+font-family: Raleway;
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+/**/
+margin-right: 32px;
+border-radius: 10px;
+}
+
+/*Кнопки после на их наведения подсвечиваются*/
+.buttons button:hover{
+background-color: #9E00FF;
+cursor: pointer;
+}
+
+/*================Не главная========================*/
+/*Положение */
+.nav_Ne_Glavnaya {
+    position: absolute;
+    margin-left: 750px;
+    margin-top: 9px;
+    display: inline-block;
+}
+/*Кнопка для выборов эмоции*/
+.Menu_Ne_Glavnaya{
+    width: 140px;
+    height: 50px;
+    border-radius: 16px;
+    color: #000;
+font-family: Raleway;
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+/*Меняем курсор*/
+cursor: pointer;
+}
+
+/*Выбор эмоции*/
+.Variants{
+    position: absolute;
+    background-color: #FFF;
+    min-width: 300px; /*Ними раширение*/
+    display: none;
+}
+/*Появление меню*/
+.Variants a{
+    text-decoration: none;/*none - Убирает подчеркивание*/
+    display: block;
+}
+.Variants a:hover{
+    background-color:#9E00FF;
+    border-radius: 24px;
+    border-color: 2 solid #000;
+}
+
+/*Изначально обращаемся к навигации*/
+.nav_Ne_Glavnaya:hover .Variants{
+    display: block;
+    border-radius: 16px;
+}
+
+.nav_Ne_Glavnaya .Menu_Ne_Glavnaya:hover{
+    background-color: #9E00FF;
+}
+
+/*Шрифты внутри*/
+.var1{
+color: #ccc;
+font-family: Raleway;
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+text-align: center;
+/**/
+padding-left: 16px;
+width: 125px;
+height: 47px;
+border-radius: 16px;
+background-color: #000;
+}
+
+.var2{
+    color: #ccc;
+    font-family: Raleway;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-align: center;
+    /**/
+    padding-left: 16px;
+    width: 125px;
+    height: 47px;
+    border-radius: 16px;
+    background-color: #000;
+}
+
+.var3{
+    color: #ccc;
+    font-family: Raleway;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-align: center;
+    /**/
+    padding-left: 16px;
+    width: 125px;
+    height: 47px;
+    border-radius: 16px;
+    background-color: #000;
+}
+
+/*==================================================*/
+
+
+
+
+/*Кнопка Связаться с нами*/
+.button_Call {
+    width: 245px;
+    height: 45px;
+    margin-top: 10px;
+    margin-left: 977px;
+    border-radius: 16px;
+    position: absolute;
+    background-color: #000;
+    /**/
+color: white;
+ font-size: 20px;
+ font-family: Raleway;
+ font-weight: 500;
+ word-wrap: break-word;
+}
+ /*Кнопки после на их наведения подсвечиваются*/
+.button_black button:hover{
+    background-color: #9E00FF;
+    cursor: pointer;
+}
+
+
+
+/*Расположение соц сетей*/
+.Nav_Image{
+    position: absolute;
+    margin-left: 1256px;
+    margin-top: 12px;
+    background-color: rgb(255, 255, 255);/*удалить*/
+    width: 136px;
+height: 40px;
+}
+
+/*Положение Соц сетей*/
+.item_Images{
+    display: flex;
+    padding: inherit;
+    margin-top: 0px;
+}
+.item_TT{
+    display: flex;
+    margin-right: 8px;
+}
+.item_VK{
+    display: flex;
+    margin-right: 8px;
+}
+.item_TG{
+    display: flex;
+}
+
+/*Блок с большими вопросами*/
+.Block_questions{
+    width: auto;
+    height: 362px;
+    padding-top: 200px;
+    border-radius: 32px;
+    justify-content: space-between;
+    display: flex;
+}
+
+/*Левый большой вопрос*/
+.Left_Question{
+    width: 394px;
+    height: 362px;
+    position: absolute;
+    border-radius: 32px;
+}
+.Left_que{
+    border-radius: 32px;
+}
+
+/*Правый большой вопрос*/
+.Right_Question{
+    width: 393px;
+    height: 363px;
+    position: inherit;
+    border-radius: 32px;
+    margin-left: 1101px;
+    /**/
+    float: right;
+}
+.Right_que{
+    border-radius: 32px;
+}
+
+/*Центр сайта*/
+.Centr{
+    width: 855px;
+    height: 250px;
+    position: absolute;
+    margin-left: 330px; /*292px*/
+}
+
+/*Элемент - Это Супер Квиз*/
+.item_Eto_Super_Quiz{
+    margin-bottom: 32px;
+}
+
+/*Протйи квиз*/
+.item_centr_Font {
+    width: 690px;
+    height: 46px;
+    position: absolute;
+    justify-content: center;
+    flex-wrap: wrap;
+    display: flex;
+    margin-left: 80px;
+    /**/
+    color: #000;
+text-align: center;
+font-family: Raleway;
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+
+/*Кнопка пройти супер квиз*/
+
+
+/*Пункт со смайликами button_Smiles*/
+.button_Smiles{
+ width: 1108px;
+ height: 48px;
+ position: absolute;   
+margin-left: 166px;
+margin-top: 362px;
+}
+
+/*====================================================*/
+/*Кнопка Прости супер квиз*/
+.Quiz{
+    background-color: #000000;
+    color: #FFF;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    /*font*/
+font-family: Raleway;
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+word-wrap: break-word;
+/**/
+margin-left: 250px;
+margin-top: 93px;
+position: absolute;
+border-radius: 16px;
+text-decoration: none;/*Убирает подчеркивание из ссылок*/
+}
+/*Убирает точку сбоку в Кнопке - Пройти супер квиз*/
+ol{
+    list-style-type: none;;
+}
+.Quiz:hover{
+    background-color: #9E00FF;
+}
+
+/*===================================================*/
+
+/*Кнопка - 😋Восхитительно*/
+/*Кнопка*/
+.Smile1{
+position: absolute;
+width: 228px;
+height: 48px;
+padding-left: 16px;
+padding-right: 16px;
+border-radius: 30px;
+/**/
+justify-content: center;
+align-items: center;
+display: inline-flex;
+}
+
+/*😋*/
+.S1{
+    padding-bottom: 4px;
+/**/
+font-family: Raleway;
+font-size: 32px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+/**/
+word-wrap: break-word;
+}
+
+/*Восхитительно*/
+.fonts1{
+    color: #000;
+font-family: Raleway;
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+
+/*Кнопка - 😎 Лучше не бывает*/
+
+/*Кнопка*/
+.Smile2{
+position: absolute;
+margin-left: 236px;
+width: 248px;
+height: 48px;
+padding-left: 16px;
+padding-right: 16px;
+border-radius: 30px;
+/**/
+justify-content: center;
+align-items: center;
+display: inline-flex;
+}
+
+/*😎*/
+.S2 {
+    padding-bottom: 4px;
+    font-family: Raleway;
+    font-size: 32px;
+    font-weight: 600;
+    letter-spacing: 0em;
+    font-style: normal;
+    line-height: normal;
+}
+
+/*Лучше не бывает*/
+.fonts2{
+    width: 168px;
+height: 23px;
+/**/
+line-height: 23px;
+letter-spacing: 0em;
+text-align: left;
+/**/
+color: #000;
+font-family: Raleway;
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+/**/
+word-wrap: break-word;
+}
+
+/*Кнопка - 😍 Где найти еще?*/
+
+/*Кнопка*/
+.Smile3{
+width: 231px;
+height: 48px;
+padding-left: 16px;
+padding-right: 16px;
+border-radius: 30px;
+/**/
+margin-left: 492px;
+position: absolute;
+/**/
+justify-content: center;
+align-items: center;
+display: inline-flex;
+}
+
+/*😍*/
+.S3 {
+    padding-bottom: 4px;
+    font-family: Raleway;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+/*Где найти еще?*/
+.fonts3{
+width: 151px;
+height: 23px;
+/**/
+color: #000;
+font-family: Raleway;
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+
+/*Кнопка - 🤩 В натуре четко!*/
+
+/*Кнопка*/
+.Smile4{
+position: absolute;
+width: 231px;
+height: 48px;
+padding-left: 16px;
+padding-right: 16px;
+/**/
+justify-content: center;
+align-items: center;
+display: inline-flex;
+/**/
+border-radius: 30px;
+margin-left: 731px;
+}
+
+/*🤩*/
+.S4{
+margin-bottom: 4px;    
+/**/
+font-style: normal;
+line-height: normal;
+/**/   
+font-size: 32px;
+font-family: Raleway;
+font-weight: 600;
+word-wrap: break-word;
+}
+
+/*В натуре четко!*/
+.fonts4{
+color: #000;
+font-family: Raleway;
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+/**/
+width: 151px;
+height: 23px;
+}
+
+/*Кнопка - 😍 Круто*/
+
+/*Кнопка*/
+.Smile5{
+position: absolute;
+width: 138px;
+height: 48px;
+padding-left: 16px;
+padding-right: 16px;
+/**/
+margin-left: 970px;
+border-radius: 30px;
+justify-content: center;
+align-items: center;
+display: inline-flex;
+}
+
+/*😍*/
+.S5{
+    font-family: Raleway;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    /**/
+    padding-bottom: 4px;
+}
+
+/*Круто*/
+.fonts5{
+color: #000;
+font-family: Raleway;
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+/**/
+width: 58px;
+height: 23px;
+}
+
+/*Свечение кнопки при наведении на нее*/
+.button_Smiles button:hover{
+    background-color: #9E00FF;
+}
+.button_Smiles button:focus{
+    background-color: yellow;/*Удалить*/
+}
+.button_Smiles .Smile1:active{
+    background-color: yellow;/*Удалить*/
+}
+.button_Smiles .Smile2:active{
+    background-color: yellow;/*Удалить*/
+}
+.button_Smiles .Smile3:active{
+    background-color: yellow;/*Удалить*/
+}
+.button_Smiles .Smile4:active{
+    background-color: yellow;/*Удалить*/
+}
+.button_Smiles .Smile5:active{
+    background-color: yellow;/*Удалить*/
+}
+
+/*=================Кнопка ПРОДОЛЖИТЬ БЛОК 1=====================*/
+/*На сайте, кнопка ПРОДОЛЖИТЬ расположена в самомнизу блоков с ответами*/
+/*Фикс для меню*/
+#fix_menu{
+position: absolute;
+border-radius: 16px;
+    height: 55px;
+    width: 596px;
+    background: #000;
+    top: 540px;
+    left: 1155px;
+    z-index: 1;
+    transform: translate(-50%);
+}
+#fix_menu .Proda1{
+    cursor: ew-resize;
+}
+
+/*Расположение кнопки*/
+.Proda1 {
+    border-radius: 16px;
+    height: 55px;
+    width: 596px;
+    background: #000;
+    position: absolute;
+    top: 540px;
+    left: 1155px;
+    z-index: 1;
+    transform: translate(-50%);
+}
+/*Размеры к ссылкам*/
+.Proda1 a{
+    text-align: center;
+color: #000;
+font-family: Raleway;
+font-size: 24px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+/**/
+display: inline-block;
+width: 190px;
+height: 50px;
+margin: 3px;
+text-decoration: none;
+}
+
+.Proda1 .bl1{
+background-color:#F0D9FF;
+border-radius: 16px;
+}
+.Proda1 .bl2{
+    background-color: #F0D9FF;
+    border-radius: 16px;
+}
+.Proda1 .bl3{
+    background-color: #F0D9FF;
+    border-radius: 16px;
+}
+
+/*==============ПЕРВАЯ СЕКЦИЯ ВОПРОСОВ==================*/  
+/*==============БЛОК ОТВЕТОВ 1==========================*/
+/*Клейка на ответа*/
+.Tests_Block_ans1 {
+    margin-top: 506px;
+    margin-left: -1496px;
+    position: absolute;
+    background-color: #F0D9FF;
+    width: 1492px;
+    height: 634px;
+    flex-shrink: 0;
+    border-radius: 32px;
+}
+
+/*Блок теста*/
+.Tests_Block {
+    margin-top: 1px;
+    margin-left: 379px;
+    position: absolute;
+    background-color: #FFF;
+    width: 1112px;
+    height: 634px;
+    flex-shrink: 0;
+    border-radius: 32px;
+}
+
+/*Какие виды тестов вам нравятся ?*/
+.Test_image{
+    margin-left: 32px;
+    margin-top: 48px;
+}
+
+/*Многие из нас хоть раз*/
+.font_block{
+    margin-left: 32px;
+    margin-top: 24px;
+    /**/
+    width: 700px;
+    height: 69px;
+    /**/
+    color: #000;
+    font-family: Raleway;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    display: flex;
+}
+
+/*Блок Ответов 1*/
+.Block_answers{
+    width: 954px;
+    height: 44px;
+}
+/*===================Галочки=========================*/
+input[type="checkbox"]{
+    /*чтбы скрыть стандартные галочки*/
+    /*display: none;*/
+    opacity: -1;
+    }
+    
+    label{
+        /*сделал отступ слева для будущей галочки*/
+        padding-left: 30px;
+        padding-right: 20px;
+        padding-bottom: 20px;
+        padding-top: 20px;
+    }
+    
+    label::before{
+        /*контент отвечает за вставку своей галочки*/
+        content:''; /*ставили пустое место*/
+        display: inline-block;
+        width: 22px;
+        height: 22px;
+        background-color: #000;/*Удалить*/
+        border-radius: 50%;
+        /*Выравниваем по средине текста будущую галочку*/
+        vertical-align: text-bottom;
+        /**/
+        margin-left: -10px;
+        margin-right: 10px;
+        /*Плавно из черного цвета в белый*/
+        transition: 0.4s;
+    }
+    
+    /*Изменения галки после нажатия*/ /*Он не будет показан, тк чтоит display="none"*/
+    input[type="checkbox"]:checked + label::before{
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    /*Плавнго из квадратика в круг*/
+    transition: 0.4s;
+    content: '';
+    background-image: url(/PNG/Vector.png);
+    background-size: 100%;
+    }
+/*============БЛОК - На Темперамент==================*/
+.font_answer1{
+color: #000;
+font-family: Raleway;
+font-size: 24px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+/*На темперамент*/
+.checkbox_btn1{
+    width: 258px;
+    height: 44px;
+    border-radius: 32px;
+    background-color: #FFF;
+}
+.checkbox_btn1:hover{
+    background-color: #8b8b8b;
+}
+/*=========Блок - Кто я из вселенной Марвел===========*/
+.font_answer2{
+    color: #000;
+    font-family: Raleway;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+/*Кто я из вселенной Марвел*/
+.checkbox_btn2{
+width: 258px;
+height: 44px;
+border-radius: 32px;
+background-color: #FFF;
+}
+.checkbox_btn2:hover{
+background-color: #8b8b8b;
+}
+/*=================Блок - Увидел это=================*/
+.font_answer3{
+    color: #000;
+    font-family: Raleway;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+/*Увидел это*/
+.checkbox_btn3{
+width: 258px;
+height: 44px;
+border-radius: 32px;
+background-color: #FFF;
+}
+.checkbox_btn3:hover{
+background-color: #8b8b8b;
+}
+
+/*==============Блок - Ответов 2=====================*/
+
+/*Блок Ответов 2*/
+.Block_answers2{
+    margin-top: 25px;
+    width: 950px;
+    height: 44px;
+}
+/*============БЛОК - Мое тотемное животное===========*/
+.font_answer4{
+color: #000;
+font-family: Raleway;
+font-size: 24px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+/*Мое тотемное животное*/
+.checkbox_btn4{
+    width: 258px;
+    height: 44px;
+    border-radius: 32px;
+    background-color: #FFF;
+}
+.checkbox_btn4:hover{
+    background-color: #8b8b8b;
+}
+/*=====================Блок - На IQ==================*/
+.font_answer5{
+    color: #000;
+    font-family: Raleway;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+/*На IQ*/
+.checkbox_btn5{
+width: 258px;
+height: 44px;
+border-radius: 32px;
+background-color: #FFF;
+}
+.checkbox_btn5:hover{
+background-color: #8b8b8b;
+}
+/*==========Блок - На словарный запас================*/
+.font_answer6{
+    color: #000;
+    font-family: Raleway;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+/*На словарный запас*/
+.checkbox_btn6{
+width: 258px;
+height: 44px;
+border-radius: 32px;
+background-color: #FFF;
+}
+.checkbox_btn6:hover{
+background-color: #8b8b8b;
+}
+
+/*==================Блок - Ответов 3=================*/
+
+/*Блок Ответов 3*/
+.Block_answers3{
+    margin-top: 25px;
+    width: 950px;
+    height: 44px;
+}
+
+/*============БЛОК - На логическое мышление===========*/
+.font_answer7{
+color: #000;
+font-family: Raleway;
+font-size: 24px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+/*На логическое мышление*/
+.checkbox_btn7{
+    width: 258px;
+    height: 44px;
+    border-radius: 32px;
+    background-color: #FFF;
+}
+.checkbox_btn7:hover{
+    background-color: #8b8b8b;
+}
+/*========Блок - На уровень интеллекта===============*/
+.font_answer8{
+    color: #000;
+    font-family: Raleway;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+/*На уровень интеллекта*/
+.checkbox_btn8{
+width: 258px;
+height: 44px;
+border-radius: 32px;
+background-color: #FFF;
+}
+.checkbox_btn8:hover{
+background-color: #8b8b8b;
+}
+
+
+/*================Кнопка ПРОДОЛЖИТЬ БЛОК 2======================*/
+/*На сайте, кнопка ПРОДОЛЖИТЬ расположена в самомнизу блоков с ответами*/
+/*Фикс для меню*/
+#fix_menu2{
+    position: absolute;
+    border-radius: 16px;
+        height: 55px;
+        width: 596px;
+        background: #000;
+        top: 540px;
+        left: 1155px;
+        z-index: 1;
+        transform: translate(-50%);
+    }
+    #fix_menu2 .Proda2{
+        cursor: ew-resize;
+    }
+    
+    /*Расположение кнопки*/
+    .Proda2 {
+        border-radius: 16px;
+        height: 55px;
+        width: 596px;
+        background: #000;
+        position: absolute;
+        top: 540px;
+        left: 1155px;
+        z-index: 1;
+        transform: translate(-50%);
+    }
+    /*Размеры к ссылкам*/
+    .Proda2 a{
+        text-align: center;
+    color: #000;
+    font-family: Raleway;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    /**/
+    display: inline-block;
+    width: 190px;
+    height: 50px;
+    margin: 3px;
+    text-decoration: none;
+    }
+    
+    .Proda2 .bl4{
+    background-color:#F0D9FF;
+    border-radius: 16px;
+    }
+    .Proda2 .bl5{
+        background-color: #F0D9FF;
+        border-radius: 16px;
+    }
+    .Proda2 .bl6{
+        background-color: #F0D9FF;
+        border-radius: 16px;
+}
+/*===========ВТОРАЯ СЕКЦИЯ ВОПРОСОВ===================*/
+/*===================БЛОК ОТВЕТОВ 2===================*/
+/*Клейка на ответа*/
+.Tests_Block_ans2 {
+    margin-top: 506px;
+    margin-left: 4px;
+    position: absolute;
+    background-color: #F0D9FF;
+    width: 1492px;
+    height: 634px;
+    flex-shrink: 0;
+    border-radius: 32px;
+}
+
+/*Блок теста*/
+        /*ВЫ ЛЮБИТЕ ПРОХОДИТЬ ТЕСТЫ*/
+.Tests_Block2 {
+    margin-top: 0px;
+    margin-left: 378px;/*-1111px*/
+    position: absolute;
+    width: 1112px;
+    height: 634px;
+    flex-shrink: 0;
+    border-radius: 32px;
+    background-color: #FFF;
+}
+
+    /*КАРТИНКА - ВЫ ЛЮБИТЕ ПРОХОДИТЬ ТЕСТЫ*/
+.Test_image2{
+    margin-left: 32px;
+    margin-top: 48px;
+}
+
+/*КОММЕНТАРИЙ - Нам важно узнать насолько часто Вы проходите тесты.*/
+.font_block2{
+    margin-left: 32px;
+    margin-top: 24px;
+    /**/
+    width: 700px;
+    height: 69px;
+    /**/
+    color: #000;
+    font-family: Raleway;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    display: flex;
+}
+
+/*Блок Ответов  - 4-ЫЙ*/
+.Block_answers4{
+    width: 954px;
+    height: 44px;
+}
+/*===================Галочки=========================*/
+input[type="checkbox"]{
+    /*чтбы скрыть стандартные галочки*/
+    /*display: none;*/
+    opacity: -1;
+    }
+    
+    label{
+        /*сделал отступ слева для будущей галочки*/
+        padding-left: 30px;
+        padding-right: 20px;
+        padding-bottom: 20px;
+        padding-top: 20px;
+    }
+    
+    label::before{
+        /*контент отвечает за вставку своей галочки*/
+        content:''; /*ставили пустое место*/
+        display: inline-block;
+        width: 22px;
+        height: 22px;
+        background-color: #000;/*Удалить*/
+        border-radius: 50%;
+        /*Выравниваем по средине текста будущую галочку*/
+        vertical-align: text-bottom;
+        /**/
+        margin-left: -10px;
+        margin-right: 10px;
+        /*Плавно из черного цвета в белый*/
+        transition: 0.4s;
+    }
+    
+    /*Изменения галки после нажатия*/ /*Он не будет показан, тк чтоит display="none"*/
+    input[type="checkbox"]:checked + label::before{
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    /*Плавнго из квадратика в круг*/
+    transition: 0.4s;
+    content: '';
+    background-image: url(/PNG/Vector.png);
+    background-size: 100%;
+    }
+/*=====БЛОК - Нет, я не никогда не прохожу тесты=====*/
+.font_answer_nine{
+color: #000;
+font-family: Raleway;
+font-size: 24px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+/*Нет, я не никогда не прохожу тесты*/
+.checkbox_btn_nine{
+    width: 258px;
+    height: 44px;
+    border-radius: 32px;
+    background-color: #FFF;
+}
+.checkbox_btn_nine:hover{
+    background-color: #8b8b8b;
+}
+/*=========Блок - Да, я прохожу все тесты===========*/
+.font_answer_ten{
+    color: #000;
+    font-family: Raleway;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+/*Да, я прохожу все тесты*/
+.checkbox_btn_ten{
+width: 258px;
+height: 44px;
+border-radius: 32px;
+background-color: #FFF;
+}
+.checkbox_btn_ten:hover{
+background-color: #8b8b8b;
+}
+
+/*==============Блок - Ответов 2=====================*/
+
+/*Блок Ответов 2*/
+.Block_answers5{
+    margin-top: 25px;
+    width: 950px;
+    height: 44px;
+}
+/*============БЛОК - Заставляю себя проходить тесты===========*/
+.font_answer12{
+color: #000;
+font-family: Raleway;
+font-size: 24px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+/*Заставляю себя проходить тесты*/
+.checkbox_btn12{
+    width: 258px;
+    height: 44px;
+    border-radius: 32px;
+    background-color: #FFF;
+}
+.checkbox_btn12:hover{
+    background-color: #8b8b8b;
+}
+
+/*==================Блок - Ответов 3=================*/
+
+/*Блок Ответов 3*/
+.Block_answers6{
+    margin-top: 25px;
+    width: 950px;
+    height: 44px;
+}
+/*=БЛОК - Не люблю проходить тесты, но иногда приходится=*/
+.font_answer15{
+color: #000;
+font-family: Raleway;
+font-size: 24px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+/*Не люблю проходить тесты, но иногда приходится*/
+.checkbox_btn15{
+    width: 258px;
+    height: 44px;
+    border-radius: 32px;
+    background-color: #FFF;
+}
+.checkbox_btn15:hover{
+    background-color: #8b8b8b;
+}
+
+/*================Кнопка ПРОДОЛЖИТЬ БЛОК 3======================*/
+/*На сайте, кнопка ПРОДОЛЖИТЬ расположена в самомнизу блоков с ответами*/
+/*Фикс для меню*/
+#fix_menu3{
+    position: absolute;
+    border-radius: 16px;
+        height: 55px;
+        width: 596px;
+        background: #000;
+        top: 540px;
+        left: 1155px;
+        z-index: 1;
+        transform: translate(-50%);
+    }
+    #fix_menu3 .Proda3{
+        cursor: ew-resize;
+    }
+    
+    /*Расположение кнопки*/
+    .Proda3 {
+        border-radius: 16px;
+        height: 55px;
+        width: 596px;
+        background: #000;
+        position: absolute;
+        top: 540px;
+        left: 1155px;
+        z-index: 1;
+        transform: translate(-50%);
+    }
+    /*Размеры к ссылкам*/
+    .Proda3 a{
+        text-align: center;
+    color: #000;
+    font-family: Raleway;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    /**/
+    display: inline-block;
+    width: 190px;
+    height: 50px;
+    margin: 3px;
+    text-decoration: none;
+    }
+    
+    .Proda3 .bl7{
+    background-color:#F0D9FF;
+    border-radius: 16px;
+    }
+    .Proda3 .bl8{
+        background-color: #F0D9FF;
+        border-radius: 16px;
+    }
+    .Proda3 .bl_nine{
+        background-color: #F0D9FF;
+        border-radius: 16px;
+}
+
+/*=============ТРЕТЬЯ СЕКЦИЯ ВОПРОСОВ=================*/
+/*===================БЛОК ОТВЕТОВ 3===================*/
+/*Клейка на ответа*/
+.Tests_Block_ans3 {
+    margin-top: 506px;
+    margin-left: 1500px;
+    position: absolute;
+    background-color: #F0D9FF;
+    width: 1492px;
+    height: 634px;
+    flex-shrink: 0;
+    border-radius: 32px;
+}
+
+/*Блок теста*/
+
+/*ВЫ ЛЮБИТЕ ПРОХОДИТЬ ТЕСТЫ*/
+.Tests_Block3 {
+    margin-top: 0px;
+    margin-left: 380px;
+    position: absolute;
+    background-color: #FFF;
+    width: 1112px;
+    height: 740px;
+    flex-shrink: 0;
+    border-radius: 32px;
+}
+
+/*BIG SMILE*/
+.Test_image_SM {
+    width: 256px;
+    height: 128px;
+    margin-top: 48px;
+    margin-left: 40px;
+}
+        
+/*КАРТИНКА - ВЫ ЛЮБИТЕ ПРОХОДИТЬ ТЕСТЫ*/
+.Test_image3{
+margin-left: 32px;
+margin-top: 24px;
+}
+        
+/*КОММЕНТАРИЙ - Нам важно узнать насолько часто Вы проходите тесты.*/
+.font_block3{
+margin-left: 32px;
+margin-top: 0px;
+/**/
+width: 700px;
+height: 69px;
+/**/
+color: #000;
+font-family: Raleway;
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+display: flex;
+}
+
+/*==Масто для комментария==*/
+.comment_placce{
+    width: 700px;
+    height: 38px;
+    /**/
+    margin-left: -1079px;
+    margin-top: 969px;
+    background-color: rgb(9, 103, 190);
+    position: absolute;
+}
+/*Комментарий*/
+.comments{
+height: 38px;
+/**/
+position: absolute;
+margin-left: 0px;
+margin-top: -4px;
+background-color: #ffffff3d;
+/**/
+color: #000;
+font-family: Raleway;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+/*=анимация для комментария=*/
+.comment_placce {
+    width: 700px;
+    height: 38px;
+    margin-left: 31px;
+    margin-top: 50px;
+    background-color: #ccc;
+}
+  
+  .comment_placce input[type="text"] {
+    padding: 4px;
+    font-size: 32px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: width 0.4s ease-in-out; /*В ширину*/
+    width: 295px;
+  }
+  .comment_placce input[type="text"]:focus {
+    width: 100%;
+  }
+
+/*================== МИНИ МЕНЮ ======================*/
+.Mini_menu{
+width: 230px;
+height: 30px;
+border-radius: 16px;
+background-color: #f2f2f2;
+border: 1px solid #ccc;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-around;
+overflow: hidden;
+transition: height 0.5s ease-in-out;
+/**/
+position: absolute;
+margin-left: -1081px;
+margin-top: 900px;
+}
+/*==================МИНИ МЕНЮ - Вариаты ответов==================*/
+/*Положение */
+.nav_button {
+    width: 140px;
+    height: 50px;
+    position: absolute;
+    margin-left: 34px;
+    margin-top: 107px;
+    background-color: rgb(136, 109, 90);
+    display: inline-block;
+}
+/*Кнопка для выборов эмоции*/
+.Menu_btn{
+    width: 300px;
+    height: 50px;
+    background-color: cornsilk;
+    border-radius: 16px;
+    /*Шрифт - Эмоция😄*/
+    color: #000;
+font-family: Raleway;
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+/*Меняем курсор*/
+cursor: pointer;
+}
+
+/*Выбор эмоции*/
+.Emoutions{
+    position: absolute;
+    background-color: #FFF;
+    min-width: 300px; /*Ними раширение*/
+    display: none;
+}
+/*Появление меню*/
+.Emoutions a{
+    text-decoration: underline;/*none - Убирает подчеркивание*/
+    color: #000;
+    padding: 12px 32px;
+    display: block;
+}
+.Emoutions a:hover{
+    background-color: coral;
+}
+
+/*Изначально обращаемся к навигации*/
+.nav_button:hover .Emoutions{
+    display: block;
+    border-radius: 16px;
+}
+
+/*Шрифт внутри Эмоция😄*/
+.Em1{
+    color: #000;
+font-family: Raleway;
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+/*==============================================================*/
+/*================Кнопка на ГЛАВНОЕ МЕНЮ========================*/
+.Glav_Menu {
+    display: block;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    position: absolute;
+    margin-left: 1000px;
+    margin-top: 15px;
+    width: 458px;
+    height: 50px;
+    border-radius: 28px;
+}
+.font_GL_Menu {
+    margin-left: 2px;
+    margin-block-end: auto;
+    position: absolute;
+    color: #000;
+    font-family: Neue Machina;
+    font-size: 63px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration: none;
+    margin-top: -17px;
+}
+
+/*==================Место для ОТЗЫВОВ===================*/
+/*Место для ОТЗЫВОВ*/
+
+.swiper {
+margin-top: 876px;
+width: 352px; /*100%* - 352px*/
+height: 464px;
+position: absolute;
+}
+.wrapper{
+    background-color:#9E00FF;
+} 
+
+/*Слайд*/
+.swiper-slide {
+width: 352px;
+height: 464px;
+border-radius: 32px;
+background-color: sienna;/*Удалить*/
+position: absolute;
+display: block;
+}
+
+/*===============Андрей Пархимович====================*/
+/*Задний Фон*/
+.Fon_Pic1{
+width: 352px;
+height: 464px;
+border-radius: 32px;
+background-color: sienna;/*Удалить*/
+position: absolute;
+display: block;
+background-image: url(/Image/Autumn.jpg);
+}
+
+/*Невидимый блог*/
+.Blog_Andrew{
+width: 336px;
+height: 286px;
+margin-left: 8px;
+margin-top: 170px;
+background-color: #dbaeae85;
+display: block;
+position: absolute;
+}
+/*Мини Блог*/
+.mini_Blog{
+    margin-top: 46px;
+    background-color: #FFF;
+    display: block;
+    position: absolute;
+    border-radius: 24px;
+    height: 240px;
+    width: 336px;
+}
+/*Рамка*/
+.Ramka{
+    background-image: url(/PNG/Ramka.png);
+    width: 128px;
+    height: 96px;
+    margin-left: 104px;
+    margin-top: -46px;
+}
+/*Фото Андрея*/
+.Photo1{
+    margin-left: 24px;
+    margin-top: 8px;
+    border-radius: 40px;
+    background-color: #9E00FF;
+    height: 80px;
+    width: 80px;
+    display: block;
+    position: absolute;
+}
+.Photo1 img{
+    height: 100%;
+    width: 100%;
+    border-radius: 40px;
+    display: block;
+    position: absolute;
+}
+/*ФИО*/
+.FIO1{
+    width: 304px;
+    height: 28px;
+    margin-left: 16px;
+    margin-top: 8px;
+    display: block;
+    position: absolute;
+    /**/
+    align-self: stretch;
+    color: #000;
+text-align: center;
+font-family: Raleway;
+font-size: 24px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+/*Комментарий*/
+.Comment1{
+    width: 304px;
+    height: 114px;
+    margin-left: 16px;
+    margin-top: 46px;
+    display: block;
+    position: absolute;
+    /**/
+color: #000;
+font-family: Raleway;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+align-self: stretch;
+}
+
+/*===================Тимур Никитенко==================*/
+/*Задний Фон*/
+.Fon_Pic2{
+    width: 352px;
+    height: 464px;
+    border-radius: 32px;
+    background-color: sienna;/*Удалить*/
+    position: absolute;
+    display: block;
+    background-image: url(/Image/Dust.jpeg);
+}
+
+/*Невидимый фон*/
+.Blog_Timur{
+width: 336px;
+height: 248px;
+background-color: #ffffff6e;
+margin-top: 208px;
+margin-left: 8px;
+display: block;
+position: absolute;    
+}
+/*Белый фон*/
+.mini_Blog_Timur{
+    margin-top: 45px;
+    width: 336px;
+height: 202px;
+background-color: #FFF;
+border-radius: 24px;
+display: block;
+position: absolute;
+}
+/*Рамка*/
+.Ramka{
+    background-image: url(/PNG/Ramka.png);
+    width: 128px;
+    height: 96px;
+    margin-left: 104px;
+    margin-top: -46px;
+}
+/*Фото - Тимур Никитенко*/
+.Photo2{
+    margin-left: 24px;
+    margin-top: 8px;
+    border-radius: 40px;
+    background-color: #9E00FF;
+    height: 80px;
+    width: 80px;
+    display: block;
+    position: absolute;
+}
+.Photo2 img{
+    height: 100%;
+    width: 100%;
+    border-radius: 40px;
+    display: block;
+    position: absolute;
+}
+/*ФИО*/
+.FIO2{
+width: 304px;
+height: 28px;
+margin-top: 8px;
+margin-left: 16px;
+display: block;
+position:absolute;
+    /**/
+align-self: stretch;
+color: #000;
+text-align: center;
+font-family: Raleway;
+font-size: 24px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+/*Комментарий*/
+.Comment2{
+    display: block;
+    position: absolute;
+    margin-left: 16px;
+    margin-top: 60px;
+width: 304px;
+height: 76px;
+/**/
+color: #000;
+font-family: Raleway;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+align-self: stretch;
+}
+
+/*=====================Артур Усович===================*/
+/*Задний Фон*/
+.Fon_Pic3{
+    width: 352px;
+    height: 464px;
+    border-radius: 32px;
+    background-color: sienna;/*Удалить*/
+    position: absolute;
+    display: block;
+    background-image: url(/Image/Forest.jpg);
+}
+
+/*Невидимый фон*/
+.Blog_Arthur{
+width: 336px;
+height: 267px;
+background-color: #ffffff6e;
+margin-top: 189px;
+margin-left: 8px;
+display: block;
+position: absolute;    
+}
+/*Белый фон*/
+.mini_Blog_Art{
+    margin-top: 45px;
+    width: 336px;
+height: 221px;
+background-color: #FFF;
+border-radius: 24px;
+display: block;
+position: absolute;
+}
+/*Рамка*/
+.Ramka{
+    background-image: url(/PNG/Ramka.png);
+    width: 128px;
+    height: 96px;
+    margin-left: 104px;
+    margin-top: -46px;
+}
+/*Фото - Тимур Никитенко*/
+.Photo3{
+    margin-left: 24px;
+    margin-top: 8px;
+    border-radius: 40px;
+    background-color: #9E00FF;
+    height: 80px;
+    width: 80px;
+    display: block;
+    position: absolute;
+}
+.Photo3 img{
+    height: 100%;
+    width: 100%;
+    border-radius: 40px;
+    display: block;
+    position: absolute;
+}
+/*ФИО*/
+.FIO3{
+width: 304px;
+height: 28px;
+margin-top: 8px;
+margin-left: 16px;
+display: block;
+position:absolute;
+    /**/
+align-self: stretch;
+color: #000;
+text-align: center;
+font-family: Raleway;
+font-size: 24px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+/*Комментарий*/
+.Comment3{
+    display: block;
+    position: absolute;
+    margin-left: 16px;
+    margin-top: 60px;
+width: 304px;
+height: 76px;
+/**/
+color: #000;
+font-family: Raleway;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+align-self: stretch;
+}
+
+/*===================Егор Грей========================*/
+/*Задний фон*/
+.Fon_Pic4{
+    width: 352px;
+    height: 464px;
+    border-radius: 32px;
+    background-color: sienna;/*Удалить*/
+    position: absolute;
+    display: block;
+    background-image: url(/Image/Sky.jpg); 
+}
+/*Прозрачный фон*/
+.Blog_Egor{
+    width: 336px;
+    height: 286px;
+    background-color: #ffffff9d;
+    display: block;
+    position: absolute;
+    margin-left: 8px;
+    margin-top: 170px;
+}
+/*Белый фон*/
+.mini_Blog_Egor{
+width: 336px;
+height: 240px;
+margin-top: 46px;
+background-color: #FFF;
+border-radius: 24px;
+display: block;
+position: absolute;
+}
+/*Рамка*/
+.Ramka{
+    background-image: url(/PNG/Ramka.png);
+    width: 128px;
+    height: 96px;
+    margin-left: 104px;
+    margin-top: -46px;
+}
+/*Фото - Егор Грей*/
+.Photo4{
+    margin-left: 24px;
+    margin-top: 8px;
+    border-radius: 40px;
+    background-color: #9E00FF;
+    height: 80px;
+    width: 80px;
+    display: block;
+    position: absolute;
+}
+.Photo4 img{
+    height: 100%;
+    width: 100%;
+    border-radius: 40px;
+    display: block;
+    position: absolute;
+}
+/*ФИО*/
+.FIO4{
+width: 304px;
+height: 28px;
+margin-top: 3px;
+margin-left: 16px;
+display: block;
+position:absolute;
+/**/
+align-self: stretch;
+color: #000;
+text-align: center;
+font-family: Raleway;
+font-size: 24px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+/*Комментарий*/
+.Comment4{
+display: block;
+position: absolute;
+margin-left: 16px;
+margin-top: 51px;
+width: 304px;
+height: 76px;
+/**/
+color: #000;
+font-family: Raleway;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+align-self: stretch;
+}
+
+/*=================Тимур Никитенко====================*/
+/*Задний фон*/
+.Fon_Pic5{
+    width: 352px;
+    height: 464px;
+    border-radius: 32px;
+    background-color: sienna;/*Удалить*/
+    position: absolute;
+    display: block;
+    background-image: url(/Image/Road.jpg);
+}
+/*Прозрачный фон*/
+.Blog_Tim{
+width: 336px;
+height: 191px;
+margin-left: 8px;
+margin-top: 265px;
+background-color: #ffffff88;
+display: block;
+position: absolute;
+}
+/*Белый фон*/
+.mini_Blog_Tim{
+width: 336px;
+height: 145px;
+margin-top: 46px;
+background-color: #FFF;
+border-radius: 24px;
+display: block;
+position: absolute;
+}
+
+/*Фото - Тимур Никитенко*/
+.Photo5{
+    margin-left: 24px;
+    margin-top: 8px;
+    border-radius: 40px;
+    background-color: #9E00FF;
+    height: 80px;
+    width: 80px;
+    display: block;
+    position: absolute;
+}
+.Photo5 img{
+    height: 100%;
+    width: 100%;
+    border-radius: 40px;
+    display: block;
+    position: absolute;
+}
+/*ФИО*/
+.FIO5{
+width: 304px;
+height: 28px;
+margin-top: 3px;
+margin-left: 16px;
+display: block;
+position:absolute;
+/**/
+align-self: stretch;
+color: #000;
+text-align: center;
+font-family: Raleway;
+font-size: 24px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+/*Комментарий*/
+.Comment5{
+display: block;
+position: absolute;
+margin-left: 63px;
+margin-top: 51px;
+width: 304px;
+height: 76px;
+/**/
+color: #000;
+font-family: Raleway;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+align-self: stretch;
+}
+
+/*Черный пол с телефоном и Email адресом*/
+.Black_Blog {
+    margin-top: 96px;
+    width: 100%;
+    height: 502px;
+    display: block;
+    position: absolute;
+    background-color: #000;
+    border-radius: 32px 32px 0px 0px;
+}
+/*Телефон*/
+.font_number{
+    display: block;
+    position: absolute;
+    width: 84px;
+    height: 23px;
+    margin-left: 46px;
+    margin-top: 32px;
+    /**/
+    color: #FFF;
+font-family: Raleway;
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+word-wrap: break-word;
+}
+
+/*+375 12 345 67 89*/
+.number_phone{
+width: 469px;
+height: 46px;
+margin-left: 48px;
+margin-top: 71px;
+display: block;
+position: absolute;
+/**/
+color: #FFF;
+font-family: Neue Machina;
+font-size: 48px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+text-decoration-line: underline;
+word-wrap: break-word;
+}
+
+/*ссылки на соц сети*/
+.Net_TT_VK_TG{
+    width: 1041px;
+    height: 80px;
+    flex-shrink: 0;
+    /**/
+    margin-left: 48px;
+    margin-top: 155px;
+    background-color: #000;
+}
+
+/*TT_Back_ground*/
+.TT_Back_ground{
+width: 340px;
+height: 80px;
+margin-top: -19px;
+border-radius: 40px;
+background-color: #000;
+display: block;
+position: absolute;
+text-decoration: none;
+}
+.TT_Back_ground img{
+    text-decoration: none;
+    width: 80px;
+    height: 80px;
+    margin-left: 125px;
+}
+
+/*VK_Back_ground*/
+.VK_Back_ground{
+width: 340px;
+height: 80px;
+margin-top: -19px;
+margin-left: 348px;
+border-radius: 40px;
+background-color: #4d76a1;
+display: block;
+position: absolute;
+text-decoration: none;
+}
+.VK_Back_ground img{
+    text-decoration: none;
+    width: 80px;
+    height: 80px;
+    margin-left: 125px;
+}
+
+/*TG_Back_groung*/
+.TG_Back_ground{
+    width: 340px;
+    height: 80px;
+    margin-top: -19px;
+    margin-left: 700px;
+    border-radius: 40px;
+    background-color: #34aadf;
+    display: block;
+    position: absolute;
+    text-decoration: none;  
+}
+.TG_Back_ground img{
+    text-decoration: none;
+    width: 80px;
+    height: 80px;
+    margin-left: 125px;
+}
+
+/*Email*/
+.font_Email{
+width: 52px;
+height: 23px;
+margin-left: 565px;
+margin-top: 32px;
+display: block;
+position: absolute;
+/**/
+color: #FFF;
+font-family: Raleway;
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+word-wrap: break-word;
+}
+
+/*Gmail*/
+.Gmail{
+    display: block;
+    position: absolute;
+    width: 526px;
+    height: 46px;
+    margin-top: 72px;
+    margin-left: 565px;    
+    /**/
+    color: #FFF;
+font-family: Neue Machina;
+font-size: 48px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+text-decoration-line: underline;
+word-wrap: break-word;
+}
+
+/*Super_Quiz*/
+.SQ_Link {
+    margin-left: 1181px;
+    width: 209px;
+    height: 35px;
+    margin-top: -37px;
+    display: block;
+    position: absolute;
+    color: #FFF;
+    font-family: Neue Machina;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    word-wrap: break-word;
+}
